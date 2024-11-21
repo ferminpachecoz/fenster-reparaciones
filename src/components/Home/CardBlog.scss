@@ -1,0 +1,25 @@
+.card-blog{
+  .image{
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+  }
+  .info{
+    padding: 1em;
+    .title{
+      font-size: 20px;
+      color: black;
+      font-weight: 700;
+      transition: 0.3s;
+    }
+    .title:hover{
+      color: var(--accent-secondary);
+    }
+    .date{
+      font-size: 14px;
+      color: var(--text);
+      font-weight: 500;
+    }
+  }
+}

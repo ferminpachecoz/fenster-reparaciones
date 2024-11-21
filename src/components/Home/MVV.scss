@@ -1,0 +1,41 @@
+.mvv{
+  padding: 5em;
+  height: 120vh;
+  .image{
+    background-image: url("https://preview.colorlib.com/theme/autorepair/images/image_1.jpg");
+    background-size: cover;
+    height: 100%;
+  }
+  .info{
+    padding: 2em;
+    height: 100%;
+    h1{
+      margin-bottom: 1em;
+    }
+    button{
+      border: none;
+      padding: 0.5em 3em;
+      border-radius: 7px;
+      font-weight: 500;
+      margin-right: 10px;
+    }
+    .txt{
+      padding: 2em;
+    }
+  }
+}
+@media (max-width: 425px){
+  .mvv{
+    padding: 3em 1em;
+    height: auto;
+    .image{
+      height: 80vh;
+    }
+    .info{
+      padding: 1em;
+      button{
+        width: 100%;
+      }
+    }
+  }
+}

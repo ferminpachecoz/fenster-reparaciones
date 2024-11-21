@@ -1,0 +1,56 @@
+.footer{
+  background-color: #252525;
+  padding: 5em 5em 2em 5em;
+  h3{
+    font-weight: 800;
+    font-size: 20px;
+    color: white;
+    margin-bottom: 1em;
+    text-transform: capitalize;
+  }
+  .detail{
+    p{
+      color: rgba(255, 255, 255, 0.7);
+    }
+  }
+  .services{
+    padding: 0em 10px;
+    i{
+      color: white;
+      font-size: 20px;
+    }
+    p{
+      color: white;
+      font-weight: 500;
+    }
+  }
+  .contact{
+    i{
+      font-size: 20px;
+      color: white;
+    }
+    p{
+      color: rgba(255, 255, 255, 0.7);
+      font-weight: 500;
+    }
+  }
+  .horarios{
+    .main{
+      text-transform: uppercase;
+      font-size: 12px;
+      font-weight: 700;
+      color: rgba(255, 255, 255, 0.7);
+    }
+    .sub{
+      padding-left: 2em;
+      color: white;
+      font-weight: 500;
+    }
+  }
+  .copyright{
+    text-align: center;
+    color: rgba(255, 255, 255, 0.336);
+    font-weight: 500;
+    margin-top: 2em;
+  }
+}

@@ -1,38 +1,54 @@
-.App {
-  text-align: center;
+@font-face {
+  font-family: 'Inter';
+  src: url('./fonts/Inter-Regular.woff2') format('woff2'),
+       url('./fonts/Inter-Regular.woff') format('woff');
+  font-style: normal;
+  font-display: swap;
+}
+body{
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  overflow-x: hidden;
+  position: relative;
+  font-display: swap;
+}
+:root {
+  --primary: #232E3D;
+  /* --accent: #38ACA8; */
+  --accent: #064acb;
+  --text: #5a5a5a;
+  /* --accent-secondary: #FD9009; */
+  --accent-secondary: #f79f24;
+}
+.section-title{
+  font-size: 34px !important;
+  text-transform: capitalize;
+}
+.section-subtitle{
+  color: var(--accent-secondary);
+  font-weight: 800;
+  font-size: 16px !important;
+  text-transform: uppercase;
+}
+p{
+  color: var(--text);
+  font-size: 16px;
+  font-weight: 400;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+ul{
+  list-style: none;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+a{
+  text-decoration: none !important;
+  color: inherit;
+  font-size: 14px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+a:hover, a:focus, a:active {
+  text-decoration: none; /* Mantiene sin subrayado en el hover o focus */
+  color: inherit;        /* Mantiene el color en cualquier estado */
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.row{
+  margin: 0px;
+  padding: 0px;
 }
