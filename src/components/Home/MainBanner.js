@@ -17,28 +17,28 @@ export default function MainBanner(){
   let array=[
     {
       imgDesktop: "/banners/banner1-desktop.webp",
-      imgMovil: "/banners/banner1-movil.webp",
-      title: "¿Estás listo para optimizar tu producción?",
-      subtitle: "Arma tu taller ideal en solo unos clics. Descubre qué pack de maquinaria se adapta mejor a tus necesidades ingresando los detalles de tu taller",
-      callToAction: "Arma tu Fábrica Ahora",
-      link: "/armar-tu-taller"
+      imgMovil: "/banners/banner1-movil.jpeg",
+      title: "Soluciones Profesionales para Ventanas de PVC",
+      subtitle: "Confíe en nuestra experiencia para reparación de sus ventanas.",
+      callToAction: "Solicitá un presupuesto gratis",
+      link: "/#consultas"
     },
     {
       imgDesktop: "/banners/banner2-desktop.webp",
-      imgMovil: "/banners/banner2-movil.webp",
-      title: "No solo vendemos máquinas, somos tu socio en el crecimiento",
-      subtitle: "Ofrecemos consultoría integral y asesoramiento personalizado para que optimices cada etapa de tu producción. Desde proveedores hasta automatización, te acompañamos en todo el proceso.",
-      callToAction: "Descubre Nuestra Consultoría",
-      link: "/consultoria"
+      imgMovil: "/banners/banner2-movil.jpeg",
+      title: "Reparamos tus Ventanas de PVC, como Nuevas",
+      subtitle: "Resuelve tus problemas de sellado, o ajustes con nuestra experiencia garantizada.",
+      callToAction: "Solicite una reparación hoy mismo",
+      link: "/#consultas"
     },
-    {
+    /* {
       imgDesktop: "/banners/banner3-desktop.webp",
-      imgMovil: "/banners/banner3-movil.webp",
+      imgMovil: "/banners/banner3-movil.jpeg",
       title: "Tecnología de Vanguardia para tu Taller",
       subtitle: "Descubre nuestros packs de maquinaria diseñados para potenciar la producción de aberturas de PVC. Innovación y eficiencia en cada solución.",
       callToAction: "Ver Packs de Maquinaria",
       link: "/#paquetes"
-    },
+    }, */
     
   ]
   return(

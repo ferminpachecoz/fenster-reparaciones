@@ -6,7 +6,7 @@ export default function CardService({icon, title, description}) {
     <div className='card-service row'>
       <div className='col-auto'>
         <div className='icon'>
-          <i className={icon}></i>
+          <img src={icon} alt="" />
         </div>
       </div>
       <div className='col'>

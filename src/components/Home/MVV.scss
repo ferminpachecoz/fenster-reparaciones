@@ -2,8 +2,9 @@
   padding: 5em;
   height: 120vh;
   .image{
-    background-image: url("https://preview.colorlib.com/theme/autorepair/images/image_1.jpg");
-    background-size: cover;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
     height: 100%;
   }
   .info{

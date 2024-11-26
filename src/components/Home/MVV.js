@@ -12,13 +12,13 @@ export default function MVV() {
   
   return (
     <div className='mvv row'>
-      <div className='col-lg-6 col-12 image'>
+      <div className='col-lg-6 col-12 image' style={{backgroundImage: "url('/images/reparacion4.webp')"}}>
 
       </div>
       <div className='col-lg-6 col-12 info'>
-        <h2 className='section-subtitle'>Welcome to Autorepair</h2>
-        <h1 className='section-title'>We help more than 45 years serving customer car</h1>
-        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+        <h2 className='section-subtitle'>¿Por qué elegirnos?</h2>
+        <h1 className='section-title'>Expertos en reparar ventanas de PVC con precisión y calidad</h1>
+        <p>En Fenster Fix, somos especialistas en reparaciones de ventanas de PVC. Nos dedicamos a resolver problemas comunes como bisagras dañadas, mecanismos desgastados, sellados deficientes y más. Nuestro compromiso es brindar soluciones rápidas y efectivas, utilizando materiales de alta calidad y técnicas precisas para garantizar que tus ventanas recuperen su funcionalidad, estética y durabilidad. Confía en nuestra experiencia y atención personalizada para mantener tus aberturas en óptimas condiciones.</p>
         <div className='d-flex flex-column flex-lg-row'>
           <button 
             onClick={()=>cambiar("1")} 

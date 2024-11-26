@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { HashLink } from 'react-router-hash-link'
 import "./Slides.scss"
 
 export default function Slides({imageDesktop, imageMovil, title, subtitle, callToAction, mobileBg, link}) {
@@ -10,9 +10,9 @@ export default function Slides({imageDesktop, imageMovil, title, subtitle, callT
           <h1 style={{fontWeight: 700, textTransform: "capitalize", color: "var(--accent-secondary)"}}>{title}</h1>
           <h2 style={{marginBottom: "2em", color: "rgb(240,240,240)"}}>{subtitle}</h2>
           <div className='center'>
-            <Link to={link}>
+            <HashLink to={link}>
               <p>{callToAction}</p> 
-            </Link>
+            </HashLink>
           </div>
         </div>
       </div>

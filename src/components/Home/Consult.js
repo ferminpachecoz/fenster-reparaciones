@@ -3,35 +3,36 @@ import "./Consult.scss";
 
 export default function Consult({array}) {
   return (
-    <div className='consult row'>
-      <div className='col-lg-6 col-12 image'>
+    <div className='consult row' id='consultas'>
+      <div className='col-lg-6 col-12 image' style={{backgroundImage: "url('/images/reparacion-cuadrada.webp')"}}>
 
       </div>
       <div className='col-lg-6 col-12 form'>
-        <h2 className='section-subtitle'>Booking an Appointment</h2>
-        <h1 className='section-title'>Free Consultation</h1>
+        <h2 className='section-subtitle'>¿Necesitas Ayuda?</h2>
+        <h1 className='section-title'>Contáctanos Hoy Mismo</h1>
         <form>
-          <select class="form-select mb-3" aria-label="Default select example">
-            <option selected>Seleccione un servicio</option>
+          <select className="form-select mb-3" aria-label="Default select example">
+            <option defaultChecked>Seleccione un servicio</option>
             {
               array.map((item, index)=>(
-                <option key={index} value="1">{item.title}</option>
+                <option key={index} value={item.title}>{item.title}</option>
               ))
             }
+            <option value="Otro" key="1000">Otro</option>
           </select>
           <div className='row gx-4'>
-            <div class="mb-3 col-6">
+            <div className="mb-3 col-6">
               <input type="text" className="form-control" id="exampleFormControlInput1" placeholder="Nombre" />
             </div>
-            <div class="mb-3 col-6">
+            <div className="mb-3 col-6">
               <input type="text" className="form-control" id="exampleFormControlInput1" placeholder="Apellido" />
             </div>
           </div>
           <div className='row gx-4'>
-            <div class="mb-3 col-6">
+            <div className="mb-3 col-6">
               <input type="email" className="form-control" id="exampleFormControlInput1" placeholder="name@example.com" />
             </div>
-            <div class="mb-3 col-6">
+            <div className="mb-3 col-6">
               <input type="text" className="form-control" id="exampleFormControlInput1" placeholder="Teléfono" />
             </div>
           </div>

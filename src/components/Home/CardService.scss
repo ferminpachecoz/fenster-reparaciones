@@ -1,11 +1,10 @@
 .card-service{
   .icon{
     background-color: var(--accent);
-    padding: 0.8em 1.2em;
+    padding: 1em;
     border-radius: 1000000px;
-    i{
-      color: white;
-      font-size: 30px;
+    img{
+      width: 40px;
     }
   }
   h3{

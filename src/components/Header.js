@@ -37,7 +37,7 @@ export default function Header() {
   return (
     <div className='header'>
       <div className='top-header d-flex justify-content-between align-items-center'>
-        <img src="logo.png" alt="Logo de la empresa" />
+        <img src="logo-fenster-square.png" alt="Logo de la empresa" />
         <div className='d-flex align-items-center'>
           <div className='d-flex mx-5 align-items-center'>
             <div className='icon'>

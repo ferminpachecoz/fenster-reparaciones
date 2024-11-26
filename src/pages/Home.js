@@ -11,34 +11,34 @@ import Footer from '../components/Footer'
 export default function Home() {
   let array=[
     {
-      icon: "bi bi-layout-text-window-reverse",
-      title: "Oil change",
-      description: "Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic."
+      icon: "/servicios/settings-gears-removebg-preview.webp",
+      title: "Cambio de mecanismos",
+      description: "Sustituimos mecanismos desgastados para restaurar el funcionamiento óptimo de tus ventanas."
     },
     {
-      icon: "bi bi-layout-text-window-reverse",
-      title: "Tire Change",
-      description: "Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic."
+      icon: "/servicios/hinge-removebg-preview.webp",
+      title: "Reparacion de bisagras",
+      description: "Ajustamos o reemplazamos bisagras dañadas para garantizar una apertura y cierre suaves."
     },
     {
-      icon: "bi bi-layout-text-window-reverse",
-      title: "Batteries",
-      description: "Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic."
+      icon: "/servicios/waterproof-removebg-preview.webp",
+      title: "Sellado de ventanas",
+      description: "Reforzamos el sellado para mejorar la eficiencia energética y evitar filtraciones."
     },
     {
-      icon: "bi bi-layout-text-window-reverse",
-      title: "Engine Repair",
-      description: "Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic."
+      icon: "/servicios/tool-removebg-preview.webp",
+      title: "Mantenimiento",
+      description: "Servicio integral para mantener tus ventanas en perfectas condiciones."
     },
     {
-      icon: "bi bi-layout-text-window-reverse",
-      title: "Tow Truck",
-      description: "Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic."
+      icon: "/servicios/window-removebg-preview.webp",
+      title: "Sustitucion de vidrios",
+      description: "Cambiamos vidrios rotos o antiguos por nuevas opciones seguras y eficientes."
     },
     {
-      icon: "bi bi-layout-text-window-reverse",
-      title: "Car Maintenance",
-      description: "Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic."
+      icon: "/servicios/caster-removebg-preview.webp",
+      title: "Cambio de ruedas",
+      description: "Reemplazamos ruedas desgastadas para un deslizamiento fluido en ventanas corredizas."
     },
   ]
   return (
@@ -48,8 +48,8 @@ export default function Home() {
       <Services array={array} />
       <MVV />
       <Consult array={array} />
-      <Blog />
-      <Proyectos />
+      {/* <Blog />
+      <Proyectos /> */}
       <Footer array={array} />
     </>
   )

@@ -6,7 +6,7 @@ export default function Footer({array}) {
     <div className='footer'>
       <div className='row align-items-start'>
         <div className='col-lg-3 col-12 detail'>
-          <h3>Pro Build Tec.</h3>
+          <h3>Fenster Fix</h3>
           <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
         </div>
         <div className='col-lg-3 col-12 services align-items-start'>

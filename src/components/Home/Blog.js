@@ -22,8 +22,8 @@ export default function Blog() {
   ]
   return (
     <div className='blog'>
-      <h2 className='section-subtitle'>News & Blog</h2>
-      <h1 className='section-title'>Latest news from our blog</h1>
+      <h2 className='section-subtitle'>Noticias & Blog</h2>
+      <h1 className='section-title'>Aprende Más sobre el Cuidado de tus Ventanas</h1>
       <div className='row row-cols-lg-3 row-cols-1 g-5'>
         {
           array.map((item,index)=>(
