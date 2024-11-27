@@ -8,7 +8,7 @@ export default function CardService({icon, title, description}) {
     <div className='card-service row'>
       <div className='col-auto'>
         <div className='icon'>
-          <img src={icon} alt="" />
+          <img src={icon} loading='eager' alt={title} />
         </div>
       </div>
       <div className='col'>

@@ -16,7 +16,7 @@ export default function Footer({array}) {
           {
             array.map((item,index)=>(
               <div className='d-flex align-items-center' key={index}>
-                <img src="/icons/check.webp" alt="Check icon" />
+                <img loading='lazy' src="/icons/check.webp" alt="Check icon" />
                 <p className='mb-0'>{item.title}</p>
               </div>
             ))
@@ -25,15 +25,15 @@ export default function Footer({array}) {
         <div className='col-lg-3 col-12 contact'>
           <h2>información</h2>
           <div className='d-flex align-items-center mb-3'>
-            <img src="/icons/location.webp" alt="Location icons" />
+            <img loading='lazy' src="/icons/location.webp" alt="Location icons" />
             <p>203 Fake St. Mountain View, San Francisco, California, USA</p>
           </div>
           <div className='d-flex align-items-center mb-3'>
-            <img src="/icons/call.webp" alt="Cellphone icon" />
+            <img loading='lazy' src="/icons/call.webp" alt="Cellphone icon" />
             <p>+2 392 3929 210</p>
           </div>
           <div className='d-flex align-items-center mb-3'>
-            <img src="/icons/email.webp" alt="Email icon" />
+            <img loading='lazy' src="/icons/email.webp" alt="Email icon" />
             <p>info@yourdomain.com</p>
           </div>
         </div>

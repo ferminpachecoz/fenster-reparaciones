@@ -63,7 +63,7 @@ function Carousel ({ slides, interval = 3000 }) {
         ))}
       </div>
       <div className="prev">
-        <img src="/arrows/back.png" onClick={()=>goToSlide(currentIndex-1)} alt="Previous Button" />
+        <img src="/arrows/back.png"  onClick={()=>goToSlide(currentIndex-1)} alt="Previous Button" />
       </div>
       <div className="next">
         <img src="/arrows/next.png" onClick={()=>goToSlide(currentIndex+1)} alt="Next button" />

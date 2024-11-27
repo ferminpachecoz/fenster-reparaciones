@@ -38,11 +38,11 @@ export default function Header() {
   return (
     <div className='header'>
       <div className='top-header d-flex justify-content-between align-items-center'>
-        <img src="logo-fenster-square.webp" alt="Logo de la empresa" />
+        <img src="logo-fenster-square.webp" loading='eager' alt="Logo de la empresa" />
         <div className='d-flex align-items-center'>
           <div className='d-flex mx-5 align-items-center'>
             <div className='icon'>
-              <img src="/icons/location-blue.webp" alt="Location icon" />
+              <img src="/icons/location-blue.webp"  loading='eager' alt="Location icon" />
             </div>
             <div className='info'>
               <p className='title'>Address</p>
@@ -51,7 +51,7 @@ export default function Header() {
           </div>
           <div className='d-flex mx-5 align-items-center'>
             <div className='icon'>
-              <img src="/icons/viber.webp" alt="Phone icon" />
+              <img src="/icons/viber.webp" loading='eager' alt="Phone icon" />
             </div>
             <div className='info'>
               <p className='title'>Call us</p>
