@@ -29,12 +29,16 @@
   width: 50%;
 }
 .slides .text h1 {
-  font-size: 2rem;
+  font-size: 2.5rem;
+  font-family: "Inter", sans-serif;
+  text-shadow: none;
 }
 
 .slides .text h2 {
   font-size: 1.5rem;
   margin-top: 0.5rem;
+  font-family: "Inter", sans-serif;
+  text-shadow: none;
 }
 
 .slides .text .center {
@@ -45,10 +49,11 @@
     width: fit-content;
     p {
       background-color: #ff6600;
-      padding: 0.5rem 1rem;
+      padding: 0.8rem 1.5rem;
       border-radius: 5px;
       color: #fff;
       text-transform: uppercase;
+      font-family: "Inter", sans-serif;
       font-weight: bold;
       cursor: pointer;
       text-align: center;
