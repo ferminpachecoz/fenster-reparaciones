@@ -48,12 +48,13 @@
     align-items: center;
     width: fit-content;
     p {
-      background-color: #ff6600;
+      background-color: var(--accent);
       padding: 0.8rem 1.5rem;
       border-radius: 5px;
       color: #fff;
       text-transform: uppercase;
       font-family: "Inter", sans-serif;
+      text-shadow: none;
       font-weight: bold;
       cursor: pointer;
       text-align: center;

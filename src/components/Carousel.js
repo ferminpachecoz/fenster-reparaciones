@@ -55,6 +55,7 @@ function Carousel ({ slides, interval = 3000 }) {
       <div className="carousel-controls">
         {slides.map((_, index) => (
           <button
+            aria-label="Navigation buttons through carousel"
             key={index}
             className={`dot ${index === currentIndex ? "active" : ""}`}
             onClick={() => goToSlide(index)}
