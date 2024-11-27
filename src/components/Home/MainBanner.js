@@ -1,18 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import "./MainBanner.scss";
-import Slides from './Slides';
+import Carousel from '../Carousel';
 
 
 export default function MainBanner(){
-  const [mobileBg, setMobileBg] = useState();
-
-  useEffect(()=>{
-    if (window.innerWidth <= 768) {
-      setMobileBg(true); // Imagen para mobile
-    } else {
-      setMobileBg(false); // Imagen para desktop
-    }
-  },[])
 
   let array=[
     {
@@ -42,24 +33,8 @@ export default function MainBanner(){
     
   ]
   return(
-    <div id="carouselExampleSlidesOnly" className="carousel slide" data-bs-ride="carousel" data-bs-pause="false">
-      <div className="carousel-inner">
-        {
-          array.map((item, index)=>(
-            <div className={`carousel-item ${index==0?'active':''}`} data-bs-interval="10000" key={index}>
-              <Slides imageMovil={item.imgMovil} imageDesktop={item.imgDesktop} title={item.title} subtitle={item.subtitle} callToAction={item.callToAction} mobileBg={mobileBg} link={item.link} />
-            </div>
-          ))
-        }
-      </div>
-      <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleSlidesOnly" data-bs-slide="prev" id="btn">
-        <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span className="visually-hidden">Previous</span>
-      </button>
-      <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleSlidesOnly" data-bs-slide="next" id="btn">
-        <span className="carousel-control-next-icon" aria-hidden="true"></span>
-        <span className="visually-hidden">Next</span>
-      </button>
+    <div className='main-banner'>
+      <Carousel slides={array} interval="500000000" />
     </div>
   )
 }

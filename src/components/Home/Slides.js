@@ -1,21 +1,27 @@
-import React from 'react'
-import { HashLink } from 'react-router-hash-link'
-import "./Slides.scss"
+import React from 'react';
+import { HashLink } from 'react-router-hash-link';
+import './Slides.scss';
 
-export default function Slides({imageDesktop, imageMovil, title, subtitle, callToAction, mobileBg, link}) {
+export default function Slides({ index, imageDesktop, imageMovil, title, subtitle, callToAction, link }) {
   return (
-    <div className='slides row' style={{backgroundImage: `url(${mobileBg?imageMovil:imageDesktop})`}}>
-      <div className='shadow'>
-        <div className='text col-12 col-lg-7'>
-          <h1 style={{fontWeight: 700, textTransform: "capitalize", color: "var(--accent-secondary)"}}>{title}</h1>
-          <h2 style={{marginBottom: "2em", color: "rgb(240,240,240)"}}>{subtitle}</h2>
-          <div className='center'>
+    <div className="slides">
+      <img 
+        src={imageDesktop} 
+        alt={title} 
+        className="slide-image"
+        loading={index === 0 ? "eager" : "lazy"} 
+      />
+      <div className="shadow">
+        <div className="text">
+          <h1>{title}</h1>
+          <h2>{subtitle}</h2>
+          <div className="center">
             <HashLink to={link}>
-              <p>{callToAction}</p> 
+              <p>{callToAction}</p>
             </HashLink>
           </div>
         </div>
       </div>
     </div>
-  )
+  );
 }

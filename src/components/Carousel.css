@@ -1,0 +1,85 @@
+.carousel {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: fit-content; /* Ajustar según tu diseño */
+}
+.prev{
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  width: 30;
+  height: 30;
+  z-index: 100000000000;
+}
+.prev img{
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+.next{
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  width: 30;
+  height: 30;
+  z-index: 100000000000;
+}
+.next img{
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+.carousel-slides {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  width: 100%;
+  height: fit-content;
+}
+.carousel-slides.initial {
+  transform: none; /* Sin desplazamiento inicial */
+}
+.carousel-slides > .slides {
+  min-width: 100%; /* Cada slide ocupa el 100% del ancho */
+  flex-shrink: 0; /* Evita que se reduzcan */
+  height: 100%; /* Asegura que la altura también sea uniforme */
+}
+
+.carousel-slide {
+  min-width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.carousel-text {
+  position: absolute;
+  bottom: 20%;
+  left: 10%;
+  color: #fff;
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.carousel-controls {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+}
+
+.carousel-controls .dot {
+  width: 10px;
+  height: 10px;
+  background-color: #fff;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+.carousel-controls .dot.active {
+  opacity: 1;
+}

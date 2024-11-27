@@ -1,7 +1,8 @@
 import React, { useState } from 'react'
 import "./Header.scss"
 import {Link} from "react-router-dom"
-
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.bundle.min';
 
 export default function Header() {
   const [hover, setHover] = useState(1)
@@ -37,7 +38,7 @@ export default function Header() {
   return (
     <div className='header'>
       <div className='top-header d-flex justify-content-between align-items-center'>
-        <img src="logo-fenster-square.png" alt="Logo de la empresa" />
+        <img src="logo-fenster-square.webp" alt="Logo de la empresa" />
         <div className='d-flex align-items-center'>
           <div className='d-flex mx-5 align-items-center'>
             <div className='icon'>
@@ -63,7 +64,7 @@ export default function Header() {
         <ul className='d-flex'>
           {
             nav.map(item=>(
-              <li key={item.id} style={{backgroundColor: hover==item.id?"var(--accent-secondary)":"white"}}>
+              <li key={item.id} style={{backgroundColor: hover==item.id?"var(--accent)":"white"}}>
                 <Link to={item.link} onClick={()=>setHover(item.id)} style={{color: hover==item.id?"white":"black"}}>{item.text}</Link>
               </li>
             ))

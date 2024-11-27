@@ -25,7 +25,7 @@ body{
   text-transform: capitalize;
 }
 .section-subtitle{
-  color: var(--accent-secondary);
+  color: var(--accent);
   font-weight: 800;
   font-size: 16px !important;
   text-transform: uppercase;

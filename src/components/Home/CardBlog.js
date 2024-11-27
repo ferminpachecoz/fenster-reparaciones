@@ -1,6 +1,8 @@
 import React from 'react';
 import "./CardBlog.scss"
 import { Link } from 'react-router-dom';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.bundle.min';
 
 export default function CardBlog({title, image, date}) {
   return (

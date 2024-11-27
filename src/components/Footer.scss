@@ -1,12 +1,13 @@
 .footer{
   background-color: #252525;
   padding: 5em 5em 2em 5em;
-  h3{
+  h2{
     font-weight: 800;
     font-size: 20px;
     color: white;
     margin-bottom: 1em;
     text-transform: capitalize;
+    text-align: start;
   }
   .detail{
     p{
@@ -49,7 +50,7 @@
   }
   .copyright{
     text-align: center;
-    color: rgba(255, 255, 255, 0.336);
+    color: rgb(255, 255, 255);
     font-weight: 500;
     margin-top: 2em;
   }

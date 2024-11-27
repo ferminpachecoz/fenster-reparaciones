@@ -1,6 +1,8 @@
 import React from 'react';
 import "./Blog.scss";
 import CardBlog from './CardBlog';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.bundle.min';
 
 export default function Blog() {
   let array=[

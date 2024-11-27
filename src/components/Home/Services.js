@@ -1,6 +1,8 @@
 import React from 'react'
 import "./Services.scss"
 import CardService from './CardService'
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.bundle.min';
 
 export default function Services({array}) {
   

@@ -1,5 +1,7 @@
 import React from 'react';
 import "./CardService.scss";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.bundle.min';
 
 export default function CardService({icon, title, description}) {
   return (
@@ -10,7 +12,7 @@ export default function CardService({icon, title, description}) {
         </div>
       </div>
       <div className='col'>
-        <h3>{title}</h3>
+        <h2>{title}</h2>
         <p>{description}</p>
       </div>
     </div>
