@@ -42,7 +42,7 @@ export default function Header() {
         <div className='d-flex align-items-center'>
           <div className='d-flex mx-5 align-items-center'>
             <div className='icon'>
-              <i className="bi bi-geo-alt"></i>
+              <img src="/icons/location-blue.webp" alt="Location icon" />
             </div>
             <div className='info'>
               <p className='title'>Address</p>
@@ -51,7 +51,7 @@ export default function Header() {
           </div>
           <div className='d-flex mx-5 align-items-center'>
             <div className='icon'>
-              <i className="bi bi-telephone-inbound"></i>
+              <img src="/icons/viber.webp" alt="Phone icon" />
             </div>
             <div className='info'>
               <p className='title'>Call us</p>
