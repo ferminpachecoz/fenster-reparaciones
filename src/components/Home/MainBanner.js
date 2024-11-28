@@ -7,7 +7,7 @@ export default function MainBanner(){
 
   let array=[
     {
-      imgDesktop: "/banners/banner1-desktop.webp",
+      imgDesktop: "/banners/banner1-desktop-1100x619.webp",
       imgMovil: "/banners/banner1-movil.jpeg",
       title: "Soluciones Profesionales para Ventanas de PVC",
       subtitle: "Confíe en nuestra experiencia para reparación de sus ventanas.",
