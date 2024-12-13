@@ -10,7 +10,6 @@ export default function MVV() {
   function cambiar (num){
     setText(num)
   }
-  console.log(text);
   
   return (
     <div className='mvv row'>
@@ -20,7 +19,7 @@ export default function MVV() {
       <div className='col-lg-6 col-12 info'>
         <h2 className='section-subtitle'>¿Por qué elegirnos?</h2>
         <h1 className='section-title'>Expertos en reparar ventanas de PVC con precisión y calidad</h1>
-        <p>En Fenster Fix, somos especialistas en reparaciones de ventanas de PVC. Nos dedicamos a resolver problemas comunes como bisagras dañadas, mecanismos desgastados, sellados deficientes y más. Nuestro compromiso es brindar soluciones rápidas y efectivas, utilizando materiales de alta calidad y técnicas precisas para garantizar que tus ventanas recuperen su funcionalidad, estética y durabilidad. Confía en nuestra experiencia y atención personalizada para mantener tus aberturas en óptimas condiciones.</p>
+        <p>En Fenster Fix ofrecemos un servicio integral y especializado en instalación y reparación de ventanas de PVC, combinando precisión técnica con una atención personalizada. Nos destacamos por utilizar herramientas y métodos de última generación, garantizando resultados confiables y duraderos tanto en proyectos de obra nueva como en soluciones rápidas para aberturas existentes. Nuestro equipo altamente capacitado trabaja con compromiso y excelencia, asegurando funcionalidad, estética y eficiencia energética en cada trabajo. Elegirnos significa confiar en un aliado que entiende tus necesidades y supera tus expectativas.</p>
         <div className='d-flex flex-column flex-lg-row'>
           <button 
             onClick={()=>cambiar("1")} 
@@ -43,17 +42,17 @@ export default function MVV() {
         </div>
         {
           text==1?
-          <p className='txt'>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+          <p className='txt'>En Fenster Fix, nuestra misión es brindar soluciones integrales en la reparación e instalación de ventanas de PVC, combinando excelencia técnica, innovación y atención al detalle. Nos comprometemos a ofrecer un servicio confiable, rápido y personalizado, asegurando la satisfacción de nuestros clientes y prolongando la vida útil de sus aberturas.</p>
           :""
         }
         {
           text==2?
-          <p className='txt'>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+          <p className='txt'>Ser la empresa líder en servicios técnicos de ventanas de PVC en Argentina, reconocida por su profesionalismo, innovación y capacidad de adaptación a las necesidades del mercado. Aspiramos a establecer un estándar de calidad en el rubro, construyendo relaciones duraderas con nuestros clientes basadas en confianza y resultados excepcionales.</p>
           :""
         }
         {
           text==3?
-          <p className='txt'>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics.</p>
+          <p className='txt'>En Fenster Fix nos guiamos por el profesionalismo, trabajando con precisión y dedicación en cada proyecto; la innovación, integrando herramientas tecnológicas y métodos modernos para ofrecer soluciones de vanguardia; el compromiso, cumpliendo siempre nuestras promesas con puntualidad y excelencia; la atención al cliente, escuchando y entendiendo sus necesidades para brindar un servicio personalizado.</p>
           :""
         }
         

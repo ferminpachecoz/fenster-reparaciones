@@ -49,7 +49,7 @@ function Carousel ({ slides, interval = 3000 }) {
         style={{ transform: `translateX(-${currentIndex * 100}%)` }}
       >
         {slides.map((slide, index) => (
-          <Slides key={index} index={index} imageDesktop={slide.imgDesktop} imageMovil={slide.imgMovil} title={slide.title} subtitle={slide.subtitle} callToAction={slide.callToAction} /* mobileBg={mobileBg} */ link={slide.link} />
+          <Slides key={index} index={index} img1200={slide.img1200} img1100={slide.img1100} img480={slide.img480} title={slide.title} subtitle={slide.subtitle} callToAction={slide.callToAction} /* mobileBg={mobileBg} */ link={slide.link} />
         ))}
       </div>
       <div className="carousel-controls">

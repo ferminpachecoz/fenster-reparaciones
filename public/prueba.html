@@ -1,0 +1,21 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prueba de srcset</title>
+</head>
+<body>
+  <!-- <img 
+    src="/banners/banner-default.webp" 
+    srcset="./banners/banner1-movil-480x720.webp 480w, /banners/banner1-desktop-1100x619.webp 1100w"
+    sizes="(max-width: 480px) 480px, " 
+    alt="Prueba de banner"
+    class="imagen"> -->
+    <picture>
+      <source srcset="./banners/banner1-movil-480x720.webp" media="(max-width: 480px)">
+      <source srcset="./banners/banner1-desktop-1100x619.webp" media="(max-width: 1100px)">
+      <source srcset="./banners/banner1-desktop.webp" media="(max-width: 1800px)">
+      <img src="./banners/banner1-movil-480x720.webp" alt="Prueba de banner">
+    </picture>
+</body>
+</html>

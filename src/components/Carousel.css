@@ -83,3 +83,11 @@
 .carousel-controls .dot.active {
   opacity: 1;
 }
+@media (max-width: 480px){
+  .prev{
+    opacity: 0;
+  }
+  .next{
+    opacity: 0;
+  }
+}

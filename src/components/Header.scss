@@ -39,9 +39,9 @@
     ul{
       margin-bottom: 0px;
       li{
-        padding: 1em 1.5em;
         transition: 0.8s;
         a{
+          padding: 1em 1.5em;
           transition: 0.8s;
           display: block;
           width: 100%;
@@ -63,8 +63,9 @@
     display: none;
   }
 }
-@media (max-width: 425px){
+@media (max-width: 480px){
   .header{
+    position: relative;
     .bottom-header{
       display: none;
     }
@@ -75,6 +76,10 @@
       display: block;
       background-color: black;
       padding: 1em;
+      position: absolute;
+      top: 0;
+      z-index: 10000;
+      width: 100%;
       i{
         font-size: 24px;
         color: var(--text);

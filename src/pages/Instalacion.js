@@ -2,13 +2,21 @@ import React from 'react'
 import Header from '../components/Header'
 import MainBanner from '../components/Home/MainBanner'
 import Services from '../components/Home/Services'
-import MVV from '../components/Home/MVV'
 import Consult from '../components/Home/Consult'
-import Blog from '../components/Home/Blog'
-import Proyectos from '../components/Home/Proyectos'
 import Footer from '../components/Footer'
 
-export default function Home() {
+export default function Instalacion() {
+  let array=[
+    {
+      img1200: "/banners/banner2-desktop.webp",
+      img1100: "/banners/banner2-desktop-1100x619.webp",
+      img480: "/banners/banner2-movil-480x720.webp",
+      title: "Reparamos tus Ventanas de PVC, como Nuevas",
+      subtitle: "Resuelve tus problemas de sellado, o ajustes con nuestra experiencia garantizada.",
+      callToAction: "Solicite una reparación hoy mismo",
+      link: "/#consultas"
+    }
+  ]
   let array1=[
     {
       icon: "/servicios/settings-gears-removebg-preview.webp",
@@ -41,35 +49,12 @@ export default function Home() {
       description: "Reemplazamos ruedas desgastadas para un deslizamiento fluido en ventanas corredizas."
     },
   ]
-  let array=[
-    {
-      img1200: "/banners/banner1-desktop.webp",
-      img1100: "/banners/banner1-desktop-1100x619.webp",
-      img480: "/banners/banner1-movil-480x720.webp",
-      title: "Instala tus ventanas de PVC y Aluminio",
-      subtitle: "Contamos con un equipo de profesionales que te acompañará durante todo el proyecto",
-      callToAction: "Solicitá un presupuesto gratis",
-      link: "/#consultas"
-    },
-    {
-      img1200: "/banners/banner2-desktop.webp",
-      img1100: "/banners/banner2-desktop-1100x619.webp",
-      img480: "/banners/banner2-movil-480x720.webp",
-      title: "Reparamos tus Ventanas de PVC, como Nuevas",
-      subtitle: "Resuelve tus problemas de sellado, o ajustes con nuestra experiencia garantizada.",
-      callToAction: "Solicite una reparación hoy mismo",
-      link: "/#consultas"
-    },
-  ]
   return (
     <>
       <Header />
       <MainBanner array={array} />
-      {/* <Services array={array} /> */}
-      <MVV />
+      <Services array={array1} />
       <Consult array={array1} />
-      {/* <Blog />
-      <Proyectos /> */}
       <Footer array={array1} />
     </>
   )

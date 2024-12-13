@@ -1,11 +1,11 @@
 import React, { useState } from 'react'
 import "./Header.scss"
-import {Link} from "react-router-dom"
+import {Link, useLocation} from "react-router-dom"
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
 
 export default function Header() {
-  const [hover, setHover] = useState(1)
+  const location = useLocation();
   const [display, setDisplay] = useState(false)
 
   let nav = [
@@ -16,22 +16,22 @@ export default function Header() {
     },
     {
       id: 2,
-      link: "/",
-      text: "Servicios"
+      link: "/instalacion",
+      text: "Instalación"
     },
     {
       id: 3,
-      link: "/",
-      text: "Nosotros"
+      link: "/#reparacion",
+      text: "Reparación"
     },
     {
       id: 4,
-      link: "/",
-      text: "Proyectos"
+      link: "/#nosotros",
+      text: "Nosotros"
     },
     {
       id: 5,
-      link: "/",
+      link: "/#contacto",
       text: "Contacto"
     },
   ]
@@ -64,8 +64,8 @@ export default function Header() {
         <ul className='d-flex'>
           {
             nav.map(item=>(
-              <li key={item.id} style={{backgroundColor: hover==item.id?"var(--accent)":"white"}}>
-                <Link to={item.link} onClick={()=>setHover(item.id)} style={{color: hover==item.id?"white":"black"}}>{item.text}</Link>
+              <li key={item.id} style={{backgroundColor: location.pathname === item.link?"var(--accent)":"white"}}>
+                <Link to={item.link} style={{color: location.pathname === item.link?"white":"black"}}>{item.text}</Link>
               </li>
             ))
           }
